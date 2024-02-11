@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+body {
+    background-image: url(images/restaurant.jpg);
+    background-size: cover;
+}
+
+@keyframes question-box {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100);
+    }
+}
+
+#yesanswer {
+    display: flex;
+    justify-content: center;
+    animation: 1.5s ease-in-out 0s 1 question-box ;
+}
+
+#cutecreature {
+    display: flex;
+    justify-content: center;
+}
+
+.buttongrp {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+button {
+    width: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+#playmusic {
+    display: flex;
+    justify-content: center;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: rgb(108, 180, 247) !important;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: rgb(250, 146, 180);
+    border-radius: 50%;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    color: rgb(150, 204, 252);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li span {
+    display: block;
+    font-size: 3rem;
+    color: rgb(247, 153, 153);
+}
+
+li.separator {
+    margin: 5px 5px;
+    font-size: 3rem;
+    line-height: 1;
+    color: rgb(247, 153, 153);
+}
+
+li:first-of-type {
+    margin-right: 2rem;
+}
+
+#restaurantpic {
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+    

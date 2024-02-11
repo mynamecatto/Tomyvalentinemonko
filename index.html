@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title id="Website name">
+        Will you be my Valentine?
+    </title>
+
+</head>
+
+<body>
+
+    <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+
+    <div id="question-box">
+        <img src="images/question.png" style="width:20%">
+    </div>
+
+    <div id="cutecreature">
+        <img src="images/Dota2-ShagbarkFlyIdle-unscreen.gif" style="width:15%">
+    </div>
+    <div class="buttongrp">
+        <a href="yespage.html">
+         <button id="yesbutton">Yes</button>
+        </a>
+            <button id="nobutton">No</button>
+    </div>
+
+    <script>
+        var b = document.querySelector("#nobutton");
+        b.addEventListener("mouseover", change);
+        function change() {
+            var i = Math.floor(Math.random() * 400) + 1;
+            var j = Math.floor(Math.random() * 400) + 1;
+            b.style.left = i + "px";
+            b.style.top = j + "px";
+        }
+
+    </script>
+<br>
+
+<div id="playmusic">
+        <audio controls autoplay>
+        <source src="audio/Anime de Japan - Going Home (Bleach OST).mp3" type="audio/mp3">
+        </audio>
+</div>
+
+    <div id="mecatto">
+        <img src="images/mecatto.png" style="width:40%">
+    </div>
+
+</body>
+
+</html>
